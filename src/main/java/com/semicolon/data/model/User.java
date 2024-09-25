@@ -15,13 +15,14 @@ import lombok.ToString;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long userId;
     private String firstName;
     private String lastName;
-    private String email;
+    private String emailAddress;
     private String password;
-    private String phone;
+    private String phoneNumber;
     private String address;
     private String Gender ;
-    private int age;
+    private UserRole userRole;
+    private String age;
 }
